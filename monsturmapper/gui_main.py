@@ -26,18 +26,18 @@ def gui():
 
     # FOR DEVELOPMENT
     #############################
-    seg_model = 'monstur_substrate_v1'
-    inDir = r'Z:\scratch\MonSturMapper_Debug\mosaics'
+    seg_model = 'monstur_substrate_v2'
+    inDir = r'/mnt/z/UDEL/Projects/HudsonRiver_Substrate/data/data_PINGMapper/20260601_HUD_CAT_Rec00007/sonar_mosaic'
     mosaicFileType = '.tif'
-    outDirTop = r'Z:\scratch\MonSturMapper_Debug'
+    outDirTop = r'/mnt/z/scratch/MonSturMapper_Debug'
     projName = 'monstur_mapper_test'
     mapRast = True
     mapShp = True
 
-    epsg = 32615
+    epsg = 32618
 
     windowSize_m = (18, 18)
-    window_stride = 6
+    window_stride = 9
     minArea_percent = 0.75
     threadCnt = 0.75
 
@@ -55,7 +55,7 @@ def gui():
     modelDir = os.path.join(MM_UTILS_DIR, 'models')
 
     supported_models = [
-        'monstur_substrate_v1',
+        'monstur_substrate_v2',
     ]
 
     if seg_model in supported_models:
