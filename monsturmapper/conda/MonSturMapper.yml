@@ -23,6 +23,6 @@ dependencies:
       - pingtile
       - doodleverse_utils
       - psutil
-      - transformers<5[torch]
+      - transformers[torch]<5
       - opencv-python
       - rsa
