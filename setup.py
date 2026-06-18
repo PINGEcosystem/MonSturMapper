@@ -15,6 +15,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
     packages=find_packages(),
+    package_data={"monsturmapper": ["conda/*.yml"]},
     # data_files=[("pingmapper_config", ["pingmapper/default_params.json"])],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",

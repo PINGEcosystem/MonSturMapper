@@ -6,10 +6,14 @@ Copyright (c) 2025 Cameron S. Bodine
 # Imports
 import os, sys
 
-# Add 'rockmapper' to the path, may not need after pypi package...
+# Add package root to the path.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_DIR = os.path.dirname(SCRIPT_DIR)
 sys.path.append(PACKAGE_DIR)
+
+from pingtile.runtime import prepare_windows_mapper_runtime
+
+prepare_windows_mapper_runtime(preload_torch=True)
 
 # Set MONSTURMAPPER utils dir
 USER_DIR = os.path.expanduser('~')
@@ -36,6 +40,7 @@ def main(process):
         print('\n\nLaunching MonSturMapper gui...\n\n')
 
         from monsturmapper.gui_main import gui
+        gui()
 
     return
 
