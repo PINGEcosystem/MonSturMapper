@@ -12,6 +12,9 @@ PACKAGE_DIR = os.path.dirname(SCRIPT_DIR)
 sys.path.append(PACKAGE_DIR)
 
 from pingtile.runtime import prepare_windows_mapper_runtime
+from monsturmapper.runtime_env import configure_geo_data_paths
+
+configure_geo_data_paths()
 
 prepare_windows_mapper_runtime(preload_torch=True)
 

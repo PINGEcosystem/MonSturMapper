@@ -11,6 +11,10 @@ import time
 import gc
 
 from monsturmapper.utils import printUsage
+from monsturmapper.runtime_env import configure_geo_data_paths
+
+# Set PROJ/GDAL paths before geospatial dependencies are imported.
+configure_geo_data_paths()
 
 # Debug
 pingTilePath = os.path.normpath('../PINGTile')

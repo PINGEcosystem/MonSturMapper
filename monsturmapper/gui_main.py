@@ -27,7 +27,7 @@ def gui():
     # FOR DEVELOPMENT
     #############################
     seg_model = 'monstur_substrate_v2'
-    inDir = r'/mnt/z/UDEL/Projects/HudsonRiver_Substrate/data/data_PINGMapper/20260601_HUD_CAT_Rec00007/sonar_mosaic'
+    inDir = r'/mnt/z/scratch/MonSturMapper_Debug/mosaic_small'
     mosaicFileType = '.tif'
     outDirTop = r'/mnt/z/scratch/MonSturMapper_Debug'
     projName = 'monstur_mapper_test'
