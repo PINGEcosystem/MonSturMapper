@@ -1,0 +1,28 @@
+name: monsturmapper-gpu
+channels:
+  - conda-forge
+variables:
+  KMP_DUPLICATE_LIB_OK: "TRUE"
+dependencies:
+  - python=3.12
+  - gdal=3.9
+  - numpy
+  - git
+  - pandas
+  - geopandas
+  - pyproj<3.7.1
+  - scikit-image
+  - joblib
+  - rasterio
+  - h5py
+  - pip
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cu126
+      - --extra-index-url https://pypi.org/simple
+      - pingseg
+      - pingtile
+      - doodleverse_utils
+      - psutil
+      - transformers[torch]<5
+      - opencv-python
+      - rsa
