@@ -49,6 +49,10 @@ def gui():
 
     deleteIntData = True
 
+    # If True, keep the per-transect predicted maps (preds_mapped) instead of
+    # deleting them; independent of mapRast, which mosaics them into one map.
+    keepIndividualMaps = False
+
     ################
     # Run MonSturMapper
 
@@ -86,6 +90,7 @@ def gui():
         modelDir=modelDir,
         predBatchSize=predBatchSize,
         deleteIntData=deleteIntData,
+        keepIndividualMaps=keepIndividualMaps,
         minPatchSize=minPatchSize_m2,
         smoothShp=smoothShp,
         smoothTol_m=smoothTol_m,
