@@ -49,8 +49,7 @@ def gui():
 
     deleteIntData = True
 
-    # If True, keep the per-transect predicted maps (preds_mapped) instead of
-    # deleting them; independent of mapRast, which mosaics them into one map.
+    # True averages/exports each transect separately; False combines transects.
     keepIndividualMaps = False
 
     ################
